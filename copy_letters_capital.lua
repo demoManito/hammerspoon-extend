@@ -1,0 +1,15 @@
+hs.hotkey.bind({"cmd","alt"},"V",function ()
+  -- 将 aa_bb_cc_command -> AaBbCcCommand
+  -- copy_context = string.gsub(hs.pasteboard.getContents(), '_[a-zA-Z]', function(s)
+  --   return string.upper(string.sub(s,2,2))
+  -- end)
+  -- copy_context = string.gsub(hs.pasteboard.getContents(), '(_[a-zA-Z])|(^[a-zA-Z])', function(s)
+  --   hs.alert.show(s)
+  --   return string.upper(string.gsub(s, "_", ""))
+  -- end)
+  -- hs.eventtap.keyStroke({ "cmd" }, "v")
+
+  copy_context = string.gsub(string.gsub(hs.pasteboard.getContents(), "_([a-z]?)", string.upper), "^[a-z]?", string.upper)
+  hs.pasteboard.setContents(copy_context)
+  hs.eventtap.keyStrokes(hs.pasteboard.getContents())
+end)
