@@ -2,13 +2,13 @@
 hammerspoon extend apply
 
 # Used to introduce
-1. install hammerspoon
+1. install hammerspoon <br>
 `brew install hammerspoon`
 
-2. See to .hammerspoon file
+2. See to .hammerspoon file <br>
 `cd  ~/.hammerspoon`
 
-3. create file
+3. create file <br>
 `touch init.lua`
 
 4. init.lua import content
@@ -25,7 +25,7 @@ hammerspoon extend apply
     end)
 ```
 
-5. clone hammerspoon-extend folder
+5. clone hammerspoon-extend folder <br>
 `git clone git@github.com:demoManito/hammerspoon-extend.git`
 
 6. refresh hammerspoon config <br>
