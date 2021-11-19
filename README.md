@@ -1,5 +1,5 @@
 # hammerspoon-extend
-hammerspoon extend apply
+hammerspoon extend apply （http://www.hammerspoon.org/go/#helloworld）
 
 # Used to introduce
 1. install hammerspoon <br>
