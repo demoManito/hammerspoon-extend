@@ -29,8 +29,10 @@ hammerspoon extend apply
 `git clone git@github.com:demoManito/hammerspoon-extend.git`
 
 6. refresh hammerspoon config
+![image](https://user-images.githubusercontent.com/27986239/142556385-1a97be52-c970-4f5a-b7ef-43def1af4812.png)
 
 
 # how to use
-search project Search in the project: `hs.hotkey.bind`, the binding of key, 
-example:
+search project Search in the project: `hs.hotkey.bind`, the binding of key, example:
+![image](https://user-images.githubusercontent.com/27986239/142556484-2ba2850f-27d8-405c-8122-c87a83bb2327.png)
+
