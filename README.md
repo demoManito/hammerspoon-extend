@@ -28,8 +28,7 @@ hammerspoon extend apply
 5. clone hammerspoon-extend folder
 `git clone git@github.com:demoManito/hammerspoon-extend.git`
 
-6. refresh hammerspoon config
-<br>
+6. refresh hammerspoon config <br>
 ![image](https://user-images.githubusercontent.com/27986239/142556385-1a97be52-c970-4f5a-b7ef-43def1af4812.png)
 
 
