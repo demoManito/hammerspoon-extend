@@ -36,3 +36,6 @@ hammerspoon extend apply （http://www.hammerspoon.org/go/#helloworld）
 search project Search in the project: `hs.hotkey.bind`, the binding of key, example:
 ![image](https://user-images.githubusercontent.com/27986239/142556484-2ba2850f-27d8-405c-8122-c87a83bb2327.png)
 
+# extra
+Increase content in a separate folder
+
