@@ -14,13 +14,13 @@ hammerspoon extend apply （http://www.hammerspoon.org/go/#helloworld）
 4. init.lua import content
 ```lua
     -- 首字母和下划线首字母转驼峰
-    require "hammerspoon-extend.copy_letters_capital"
+    require "hammerspoon-extend.copy.letters_capital"
     -- 下划线转驼峰
-    require "hammerspoon-extend.copy_hump_strikethrough"
+    require "hammerspoon-extend.copy.hump_strikethrough"
     -- 中划线转驼峰
-    require "hammerspoon-extend.copy_hump"
+    require "hammerspoon-extend.copy.hump"
     -- 剪切历史
-    require "hammerspoon-extend.copy.copy_histroy"
+    require "hammerspoon-extend.copy.histroy"
    
     hs.hotkey.bind({"cmd", "alt", "ctrl"}, "W", function()
         hs.alert.show("Hello World!")
