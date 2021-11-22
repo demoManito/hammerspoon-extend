@@ -19,6 +19,8 @@ hammerspoon extend apply （http://www.hammerspoon.org/go/#helloworld）
     require "hammerspoon-extend.copy_hump_strikethrough"
     -- 中划线转驼峰
     require "hammerspoon-extend.copy_hump"
+    -- 剪切历史
+    require "hammerspoon-extend.copy.copy_histroy"
    
     hs.hotkey.bind({"cmd", "alt", "ctrl"}, "W", function()
         hs.alert.show("Hello World!")
