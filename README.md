@@ -1,7 +1,7 @@
 # hammerspoon-extend
 hammerspoon extend apply （http://www.hammerspoon.org/go/#helloworld）
 
-# Used to introduce
+# instruction for use
 1. install hammerspoon <br>
 `brew install hammerspoon`
 
