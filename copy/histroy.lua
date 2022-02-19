@@ -1,6 +1,6 @@
 -- 自定义菜单栏
 local frequency = 0.8 -- 速度以秒为单位来检查剪贴板的变化。如果你检查过于频繁,就会松性能,如果你检查稀疏松散的副本
-local hist_size = 50 -- 历史记录的最大数量
+local hist_size = 20 -- 历史记录的最大数量
 local label_length = 70
 local honor_clearcontent = false -- 如果任何应用程序清除纸板,我们也将它从历史中删除 https://groups.google.com/d/msg/hammerspoon/skEeypZHOmM/Tg8QnEj_N68J
 local pasteOnSelect = false
@@ -15,7 +15,7 @@ local settings = require("hs.settings")
 local last_change = pasteboard.changeCount()
 
 -- clipboard_history 数组，用来存储剪贴板历史记录
--- 如果系统上未保存任何历史记录，请创建空历史记录
+-- 如果系统上未保存任何历史记录，创建空历史记录
 local clipboard_history = settings.get("so.victor.hs.jumpcut") or {}
 
 function subStringUTF8(str, startIndex, endIndex)
@@ -32,7 +32,7 @@ function subStringUTF8(str, startIndex, endIndex)
     end
 end
 
---返回当前截取字符串正确下标
+-- 返回当前截取字符串正确下标
 function subStringGetTrueIndex(str, index)
     local curIndex = 0
     local i = 1
@@ -45,7 +45,7 @@ function subStringGetTrueIndex(str, index)
     return i - lastCount
 end
 
---返回当前字符实际占用的字符数
+-- 返回当前字符实际占用的字符数
 function subStringGetByteCount(str, index)
     local curByte = string.byte(str, index)
     local byteCount = 1
@@ -121,9 +121,7 @@ populateMenu = function(key)
     end
     table.insert(menuData, {title="-"})
     table.insert(menuData, {title="Clear All", fn = function() clearAll() end })
-    if (key.alt == true or pasteOnSelect) then
-        table.insert(menuData, {title="Direct Paste Mode ✍", disabled=true})
-    end
+
     return menuData
 end
 
