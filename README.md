@@ -21,6 +21,8 @@ hammerspoon extend apply （http://www.hammerspoon.org/go/#helloworld）
     require "hammerspoon-extend.copy.hump"
     -- 剪切历史
     require "hammerspoon-extend.copy.histroy"
+    -- 复制 PR
+    require "hammerspoon-extend.copy.pick_branch"
    
     hs.hotkey.bind({"cmd", "alt", "ctrl"}, "W", function()
         hs.alert.show("Hello World!")
