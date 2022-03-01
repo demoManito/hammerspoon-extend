@@ -13,6 +13,7 @@ hammerspoon extend apply （http://www.hammerspoon.org/go/#helloworld）
 
 4. init.lua import content
 ```lua
+    -- copy
     -- 首字母和下划线首字母转驼峰
     require "hammerspoon-extend.copy.letters_capital"
     -- 下划线转驼峰
@@ -23,6 +24,9 @@ hammerspoon extend apply （http://www.hammerspoon.org/go/#helloworld）
     require "hammerspoon-extend.copy.histroy"
     -- 复制 PR
     require "hammerspoon-extend.copy.pick_branch"
+    -- screen
+    -- 寻找鼠标
+    require "hammerspoon-extend.screen.mouse"
    
     hs.hotkey.bind({"cmd", "alt", "ctrl"}, "W", function()
         hs.alert.show("Hello World!")
